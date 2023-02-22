@@ -33,6 +33,7 @@ body {
     height: 30px;
     animation: comeco-animation 500ms infinite;
     visibility: hidden;
+    display: none;
 }
 
 .flexivel {

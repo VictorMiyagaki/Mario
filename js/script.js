@@ -71,6 +71,7 @@ function start() {
             mario.style.width = '96px';
             gameover.style.visibility = 'visible';
             voltar.style.visibility = 'visible';
+            voltar.style.display = 'block';
 
             clearInterval(loop);
             clearInterval(cron);
