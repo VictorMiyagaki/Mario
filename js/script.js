@@ -72,6 +72,7 @@ function start() {
             gameover.style.visibility = 'visible';
             voltar.style.visibility = 'visible';
             voltar.style.display = 'block';
+            voltar.style.animation = 'comeco-animation 500ms infinite';
 
             clearInterval(loop);
             clearInterval(cron);

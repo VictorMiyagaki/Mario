@@ -31,7 +31,6 @@ body {
 .voltar {
     margin-top: 20px;
     height: 30px;
-    animation: comeco-animation 500ms infinite;
     visibility: hidden;
     display: none;
 }
