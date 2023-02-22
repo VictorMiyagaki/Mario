@@ -77,17 +77,23 @@ form {
     border-bottom: 15px solid rgb(0, 96, 0);
     border-radius: 10px;
     position: relative;
-    background: linear-gradient(rgb(167, 167, 226), rgb(135, 155, 219), rgb(0, 0, 0));
     animation: game-animation 7.5s infinite alternate;
-    background-size: 100% 500%;
+}
+
+body .flexivel .game .time {
+    animation: game-animation 7.5s infinite alternate;
 }
 
 @keyframes game-animation {
-    from {
-        background-position-y: 0%;
+    0% {
+        background: rgb(161, 173, 255);
+        text-color: black;
     }
-    to {
-        background-position-y: 100%;
+
+    100% {
+        background: rgb(4, 3, 51);
+        text-color: white;
+
     }
 }
 

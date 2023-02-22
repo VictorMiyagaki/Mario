@@ -50,7 +50,7 @@ function start() {
     pipe.style.visibility = 'visible';
     cron = setInterval(() => { timer(); }, 10);
     pipe.style.animation = 'pipe-animation 3s infinite linear';
-    if (window.matchMedia("(max-width: 400px)").matches) {
+    if (window.matchMedia("(max-width: 1000px)").matches) {
         pipe.style.animation = 'pipe-animation 1s infinite linear';
         clearInterval(cron);
         comeco.style.display = 'none';
@@ -79,7 +79,7 @@ function start() {
         }
         if (second == 9) {
             pipe.style.animation = 'pipe-animation 1s infinite linear';
-            if (window.matchMedia("(max-width: 400px)").matches) {
+            if (window.matchMedia("(max-width: 1000px)").matches) {
                 pipe.style.animation = 'pipe-animation 750ms infinite linear';
             }
         }
@@ -87,7 +87,7 @@ function start() {
             pipe.style.animation = 'pipe-animation 750ms infinite linear';
         }
         if (second == 19) {
-            if (window.matchMedia("(max-width: 400px)").matches) {
+            if (window.matchMedia("(max-width: 1000px)").matches) {
                 pipe.style.animation = 'pipe-animation 650ms infinite linear';
             }
         }
