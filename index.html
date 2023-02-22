@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Mario</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/cogumelo.png">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
@@ -12,11 +13,21 @@
 
 <body>
     <div class="flexivel">
+        <div class="titulo">
+            <img src="images/sobreviver.png" class="sobreviver">
+        </div>
+        <img src="images/game-over.webp" class="gameover">
+        <form name ="form_main"><img src="images/start.png" name="start" class="comeco"></form>
         <div class="game">
+            <div class="time">
+                <span id="hour">00</span> :
+                <span id="minute">00</span> :
+                <span id="second">00</span>
+                <span id="millisecond">000</span>
+            </div>
             <img src="images/pipe.png" class="pipe">
             <img src="images/mario.gif" class="mario">
             <img src="images/clouds.png" class="clouds">
-            <img src="images/game-over.webp" class="game-over">
         </div>
     </div>
 

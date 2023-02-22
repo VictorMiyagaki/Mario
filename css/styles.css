@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body {
@@ -9,11 +10,39 @@ body {
     min-height: 100vh;
 }
 
+.titulo {
+    text-align: center;
+}
+
 .flexivel {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    flex-direction: column;
+}
+
+form {
+    position: absolute;
+    z-index: 5;
+}
+
+.comeco {
+    animation: comeco-animation 500ms infinite;
+}
+
+@keyframes comeco-animation {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .game {
@@ -29,10 +58,21 @@ body {
     position: relative;
 }
 
-.game-over {
+#millisecond {
+    display: none;
+}
+
+.time {
     position: absolute;
-    margin: 25% 25% 25% 25%;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+}
+
+.gameover {
     height: 150px;
+    position: absolute;
+    z-index: 5;
     visibility: hidden;
 }
 
@@ -57,7 +97,8 @@ body {
     position: absolute;
     bottom: 0;
     width: 64px;
-    animation: pipe-animation 3s infinite linear;
+    animation: none;
+    visibility: hidden;
 }
 
 @keyframes pipe-animation {
@@ -93,9 +134,10 @@ body {
 }
 
 @keyframes clouds-animation {
-    from{ 
+    from {
         right: -795px;
     }
+
     to {
         right: 100%;
     }
@@ -103,6 +145,11 @@ body {
 
 @media screen and (max-width: 767px) {
     .pipe {
-        animation: pipe-animation 1s infinite linear;
+        animation: none;
+    }
+
+    .sobreviver {
+        width: 80%;
+        margin: 0 auto;
     }
 }
