@@ -1,6 +1,7 @@
 const mario = document.querySelector('.mario')
 const pipe = document.querySelector('.pipe')
 const gameover = document.querySelector('.gameover')
+const voltar = document.querySelector('.voltar')
 const comeco = document.querySelector('.comeco')
 document.form_main.start.onclick = () => start();
 
@@ -69,6 +70,7 @@ function start() {
             mario.src = './images/mario-death.png';
             mario.style.width = '96px';
             gameover.style.visibility = 'visible';
+            voltar.style.visibility = 'visible';
 
             clearInterval(loop);
             clearInterval(cron);

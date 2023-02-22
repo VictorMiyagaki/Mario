@@ -14,6 +14,27 @@ body {
     text-align: center;
 }
 
+.sobreviver {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.centro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 5;
+    flex-direction: column;
+}
+
+.voltar {
+    margin-top: 20px;
+    height: 30px;
+    animation: comeco-animation 500ms infinite;
+    visibility: hidden;
+}
+
 .flexivel {
     display: flex;
     align-items: center;
@@ -29,6 +50,7 @@ form {
 
 .comeco {
     animation: comeco-animation 500ms infinite;
+    cursor: pointer;
 }
 
 @keyframes comeco-animation {
@@ -71,7 +93,6 @@ form {
 
 .gameover {
     height: 150px;
-    position: absolute;
     z-index: 5;
     visibility: hidden;
 }
